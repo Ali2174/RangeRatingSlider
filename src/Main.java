@@ -18,7 +18,6 @@ public class Main {
 nextBtn1.click();
 
 WebElement nextBtn2=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[2]/div/c-wiz/div/div[2]/div/div[2]/div/div[1]/div/div/button"));
-nextBtn2.click();
 
 
     }
