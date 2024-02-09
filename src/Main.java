@@ -26,8 +26,8 @@ public class Main {
         Thread.sleep(1000);
         WebElement slider=driver.findElement(By.xpath("/html/body/div/div[2]/input"));
         Thread.sleep(1000);
-        Actions actions=new Actions(driver);
         // Slide
+        Actions actions=new Actions(driver);
         actions.dragAndDropBy(slider,-50,0).perform();
         Thread.sleep(1000);
         actions.dragAndDropBy(slider,0,0).perform();
@@ -37,13 +37,9 @@ public class Main {
 
      WebElement tymsg=driver.findElement(By.id("ty-msg"));
         System.out.println(tymsg.getText());
-
+        //check up feedback text
         asserts("Thank you for your feedback!",tymsg.getText());
-//     if(tymsg.getText().("Thank you for your feedback!")){
-//         System.out.println("true");
-//     }else{
-//         System.out.println("Problem");
-//     }
+
      Thread.sleep(3000);
 driver.quit();
     }
