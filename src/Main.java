@@ -37,7 +37,7 @@ public class Main {
 
      WebElement tymsg=driver.findElement(By.id("ty-msg"));
         System.out.println(tymsg.getText());
-        //check up feedback text
+        //check up feedback texts
         asserts("Thank you for your feedback!",tymsg.getText());
 
      Thread.sleep(3000);
